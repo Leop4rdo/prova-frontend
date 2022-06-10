@@ -1,0 +1,21 @@
+:root {
+    --bg-base    : #EEE;
+    --bg-modal   : #21212199;
+    --text       : #212121;
+    --light-gray : #BBB;
+    --dark-gray  : #777;
+
+    --primary : #B10202;
+    --green : #16b102;
+
+    --shadow : 4px 6px 18px #2121213D;
+
+
+    --font-base: "Montserrat", sans-serif;
+    --font-thin: 100;
+    --font-light: 200;
+    --font-regular: 300;
+    --font-medium: 400;
+    --font-semiBold: 500;
+    --font-bold: 600;
+}

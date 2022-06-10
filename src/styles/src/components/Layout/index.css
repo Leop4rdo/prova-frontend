@@ -1,0 +1,120 @@
+.layout-container {
+    display: flex;
+
+    width: 100vw;
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+
+.topbar {
+    height: clamp(50px, 5vh, 80px);
+    width: 100%;
+
+    background-color: var(--bg-modal);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 2.5vw;
+
+    z-index: 99;
+    position: absolute;
+}
+
+.sidebar {
+    width: 0px;
+    overflow: hidden;
+
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    padding-top: 12px;
+
+    transition: width 0.25s ease-out;
+}
+
+.sidebar.active {
+    width: clamp(200px, 20vw, 500px);
+}
+
+.sidebar .logo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+.sidebar .logo  span {
+    color: white;
+    font-weight: var(--font-bold);
+}
+
+.sidebar .logo img{
+    width: 100%;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    cursor: pointer;
+}
+
+.nav-item img {
+    width: 32px;
+}
+
+.nav-item span {
+    font-size: clamp(.75rem, 1.5vw, 1.25rem);
+    color: white;
+}
+
+/* menu */
+.hamburguer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: clamp(32px, 3vh, 64px);
+    width: clamp(32px, 3vh, 64px);
+
+    cursor: pointer;
+}
+
+.hamburguer-menu span {
+    display: block;
+    height: 4px;
+    width: clamp(32px, 3vh, 64px);
+    border-radius: 3px;
+
+    background-color: white;
+
+    transition: transform 0.25s ease-in-out;
+}
+
+
+/* logou link */
+.logout {
+    color: white;
+    font-weight: var(--font-bold);
+    transition: color .25s ease-out;
+}
+
+.logout:hover {
+    color: var(--primary);
+
+}

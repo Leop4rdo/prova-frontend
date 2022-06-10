@@ -1,0 +1,87 @@
+.opportunity-page-container {
+    padding: 50px;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: auto;
+}
+
+.opportunity {
+    width: 80%;
+    
+    padding: 24px;
+
+    background-color: white;
+    
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.opportunity header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.opportunity header img {
+    width: clamp(24px, 2vw, 32px);
+}
+
+.opportunity .title,
+.opportunity .total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.opportunity .title h2 {
+    font-size: clamp(.8rem, 1.25vw, 1.25rem);
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.details .column {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.details h3 {
+    font-size: clamp(.8rem, 1vw, 1rem);
+}
+
+.requirements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.requirements .item {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px;
+
+    border-radius: 12px;
+}
